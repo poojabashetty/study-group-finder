@@ -10,7 +10,6 @@ import EditGroup from "./pages/EditGroup";
 import MyGroups from "./pages/MyGroups";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
-import Chat from "./pages/Chat";
 import NotFound from "./pages/NotFound";
 
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -75,15 +74,6 @@ function App() {
         element={
           <ProtectedRoute>
             <Profile />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
-        path="/chat"
-        element={
-          <ProtectedRoute>
-            <Chat />
           </ProtectedRoute>
         }
       />
